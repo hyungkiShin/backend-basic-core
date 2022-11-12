@@ -1,4 +1,8 @@
-package com.example.core.member;
+package com.example.core;
+
+import com.example.core.member.Grade;
+import com.example.core.member.Member;
+import com.example.core.member.MemberServiceImpl;
 
 public class MemberApp {
 
