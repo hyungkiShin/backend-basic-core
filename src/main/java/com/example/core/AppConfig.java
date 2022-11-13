@@ -15,15 +15,15 @@ public class AppConfig {
         return new MemberServiceImpl(memberRepository());
     }
 
-    private MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
-
     public OrderService orderService() {
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 
     public DiscountPolicy discountPolicy() {
         return new FixDiscountPolicy();
+    }
+
+    private MemberRepository memberRepository() {
+        return new MemoryMemberRepository();
     }
 }
